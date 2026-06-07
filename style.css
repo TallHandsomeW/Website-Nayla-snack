@@ -391,7 +391,7 @@ section { padding: 80px 5%; }
   font-size: 0.95rem; font-weight: 800; color: var(--green);
   margin-bottom: 8px;
 }
-.isi-produk-penuh > p {
+.isi-produk-penuh > p:not(.harga-produk) {
   color: #777; line-height: 1.6; margin-bottom: 0;
   font-size: 0.875rem; max-width: 400px;
 }
@@ -507,6 +507,7 @@ section { padding: 80px 5%; }
   padding: 12px; border: 2px solid #e8e8e8;
   border-radius: var(--radius-sm); cursor: pointer;
   transition: border-color 0.2s; font-weight: 700; font-size: 0.92rem;
+  text-align: center;
 }
 .opsi-bayar:has(input:checked) { border-color: var(--green); background: #e8fef0; }
 .opsi-bayar input { margin: 0; }
